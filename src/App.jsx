@@ -64,7 +64,7 @@ export default function App() {
       <div className="header">
         <h1>Tenzies</h1>
         <p>
-          Roll until all the dice are the same. <br /> Click each die to freeze it between rolls.
+          Roll the dice until they all match. <br /> Click a die to hold it between rolls.
         </p>
       </div>
       {/* CONFETTI AFTER GAME WON */}
