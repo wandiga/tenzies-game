@@ -1,0 +1,122 @@
+/* Imports Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  background-color: #0b2434;
+  font-family: 'Karla', sans-serif; /* Sets the font to all elements. */
+}
+
+div#root {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 400px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  min-width: 400px;
+  height: 100%;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 0%;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+}
+
+/* For creating the grid of buttons. */
+.dice-container {
+  display: grid;
+  gap: 20px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 24px;
+}
+
+/* Individual die button */
+.btn-die {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-family: inherit; /* Picks up the font from the parent - in this case the body. */
+  font-weight: bold;
+  color: #2b283a;
+}
+
+/* Held state for the die button. */
+.btn-die-held {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+  width: 36px;
+  height: 36px;
+  background-color: #59e391;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-family: inherit; /* Picks up the font from the parent - in this case the body. */
+  font-weight: bold;
+  color: #2b283a;
+}
+
+.btn-roll {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 24px;
+  padding: 12px 40px;
+  background-color: #5035ff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.btn-roll:hover {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+}
